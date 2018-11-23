@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype 
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+    <id>com.imos</id>
+    <resources>
+        <resource>src/main/resources/log4j2.xml</resource>
+        <resource>src/main/webapp/WEB-INF/beans.xml</resource>
+        <resource>src/main/webapp/index.html</resource>
+        <resource>Dockerfile</resource>
+        <resource>build_execute.sh</resource>
+        <resource>build_execute.bat</resource>
+    </resources>
+    <testSources>
+        <source>src/test/java/TestClass.java</source>
+    </testSources>
+    <testResources>
+        <resource>src/test/resources/log4j2.xml</resource>
+    </testResources>
+</archetype>
